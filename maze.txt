@@ -1,0 +1,24 @@
+# State 0 = North
+# State 1= East
+# State 2 = West
+# State 3 = South
+
+# Go E if E is open
+0 *x** -> E 1
+# Stop if E is closed and switch to W state
+0 *E** -> X 2
+
+# Go S if S is open
+1 ***x -> S 3
+# Stop if S is closed and switch to N state
+1 ***S -> X 0
+
+# Go N if N is open
+2 X*** -> N 0
+# Stop if N is closed and switch to S state
+2 N*** -> X 3
+
+# Go W if W is open
+3 **x* -> W 2
+# Stop if W is closed and switch to E state
+3 **W* -> X 1
