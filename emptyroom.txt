@@ -1,2 +1,22 @@
-#Haesol and Ryan for SPIS 2022
-print('Hello, World');
+#Haesol and Andy for SPIS 2022
+
+# state 0 with nothing N: go one step N
+0 x*** -> N 0   
+
+# state 0 with something to the N: go W + into st 1 
+0 N*x* -> W 1 
+
+# state 1 with nothing to the S: go one step S
+1 ***x -> S 1   
+
+# state 1 with something to the S: stay put + into state 0
+1 ***S -> X 0   
+
+# state 0 in top left corner: move one step S + into state 2
+0 N*W* -> E 2
+
+# state 2 with nothing to the bottom: go south until hit S wall
+2 Nxxx -> E 2
+
+# state 2 in the top right corner: move south until hit south wall
+2 NE** -> S 1
