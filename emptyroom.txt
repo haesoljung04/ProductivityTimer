@@ -15,7 +15,7 @@
 # state 0 in top left corner: move one step S + into state 2
 0 N*W* -> E 2
 
-# state 2 with nothing to the bottom: go south until hit S wall
+# state 2 with nothing to the bottom: go east until hit Ewall
 2 Nxxx -> E 2
 
 # state 2 in the top right corner: move south until hit south wall
