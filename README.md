@@ -1,2 +1,2 @@
-# Use the website by copy-pasting the link below into your browser!
+# Use the website by clicking on the link below!
 https://polpettaproductivity.haesoljung.repl.co/
